@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #000;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+button {
+  cursor: pointer;
+}
+.grid {
+  display: grid;
+  gap: 3rem;
+}
+.grid--2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-col {
+  grid-template-columns: repeat(5, 1fr);
+}
+.btn {
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  border: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 3.2rem;
+  cursor: pointer;
+}
+
+.primary-heading {
+  font-size: 6.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.75px;
+  margin-bottom: 1.6rem;
+}
+.secondary-heading {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 1.6rem;
+}
+.tertiary-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 1.6rem;
+}
+.sub-heading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ff3e66;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+.feature-icon {
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 3.2rem;
+  color: #fff;
+  fill: #fff;
+}
+.dot {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  justify-self: end;
+}
+.center {
+  text-align: center;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+.list-icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  color: #5c8ff7;
+  background-color: #eef4fe;
+  border-radius: 50%;
+}
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Bold: 700
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
